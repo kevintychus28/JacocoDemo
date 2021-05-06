@@ -17,7 +17,7 @@ public class InstrumentedActivity extends MainActivity {
 
     private void generateCoverageReport() {
         String DEFAULT_COVERAGE_FILE_PATH = getFilesDir().getPath() + "/coverage.ec";
-        Log.d(TAG, "generateCoverageReport():" + DEFAULT_COVERAGE_FILE_PATH);
+        Log.d(TAG, "生成覆盖率文件：" + DEFAULT_COVERAGE_FILE_PATH);
         try {
             OutputStream out = new FileOutputStream(DEFAULT_COVERAGE_FILE_PATH, false);
             Object agent = Class.forName("org.jacoco.agent.rt.RT")

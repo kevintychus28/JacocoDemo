@@ -15,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void toast(View view) {
-        Toast.makeText(this, "哈哈", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "修改了分支？", Toast.LENGTH_SHORT).show();
     }
 
 }

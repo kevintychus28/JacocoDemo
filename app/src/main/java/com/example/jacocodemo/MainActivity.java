@@ -27,17 +27,15 @@ public class MainActivity extends AppCompatActivity {
                 tv_1.setText("新的了");
             }
         });
-        btn_2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this,SecondActivity.class);
-                startActivity(intent);
-            }
-        });
     }
 
     public void toast(View view) {
         Toast.makeText(this, "创建了dev分支", Toast.LENGTH_SHORT).show();
+    }
+
+    public void intent(View view){
+        Intent intent = new Intent(MainActivity.this,SecondActivity.class);
+        startActivity(intent);
     }
 
 }

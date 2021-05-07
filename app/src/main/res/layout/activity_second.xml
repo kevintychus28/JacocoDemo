@@ -5,6 +5,24 @@
     android:layout_height="match_parent"
     tools:context=".SecondActivity">
 
+    <RadioGroup
+        android:id="@+id/rg_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/rb_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="选择一" />
+        <RadioButton
+            android:id="@+id/rb_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="选择二" />
+
+    </RadioGroup>
+
     <TextView
         android:id="@+id/tv_2"
         android:layout_width="wrap_content"

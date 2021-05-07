@@ -18,11 +18,11 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         tv_1 = findViewById(R.id.tv_1);
-        tv_1.setOnClickListener(v -> tv_1.setText("新的了"));
+        tv_1.setOnClickListener(v -> tv_1.setText("修改了text"));
     }
 
     public void toast(View view) {
-        Toast.makeText(this, "新的toast", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "修改了toast", Toast.LENGTH_SHORT).show();
     }
 
     public void intent(View view){

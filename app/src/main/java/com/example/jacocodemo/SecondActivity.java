@@ -17,6 +17,8 @@ public class SecondActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_second);
+        tv_2 = findViewById(R.id.tv_2);
+        btn_3 = findViewById(R.id.btn_3);
         tv_2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

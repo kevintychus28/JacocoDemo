@@ -12,21 +12,13 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity {
 
     TextView tv_1;
-    Button btn_1;
-    Button btn_2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         tv_1 = findViewById(R.id.tv_1);
-        btn_1 = findViewById(R.id.btn_1);
-        btn_1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                tv_1.setText("新的了");
-            }
-        });
+        tv_1.setOnClickListener(v -> tv_1.setText("新的了"));
     }
 
     public void toast(View view) {

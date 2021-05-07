@@ -9,6 +9,7 @@ import android.widget.Button;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class SecondActivity extends AppCompatActivity {
 
@@ -16,6 +17,7 @@ public class SecondActivity extends AppCompatActivity {
     Button btn_3;
     RadioGroup rg_1;
     RadioButton rb_1, rb_2;
+    int i;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,17 +46,28 @@ public class SecondActivity extends AppCompatActivity {
         rg_1.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {
-                switch (checkedId){
+                switch (checkedId) {
                     case R.id.rb_1:
                         rb_1.setChecked(true);
+                        i = 1;
+                        func();
                         break;
                     case R.id.rb_2:
                         rb_2.setChecked(true);
+                        i = 2;
+                        func();
                         break;
                 }
             }
         });
-
-
     }
+
+    public void func() {
+        if (i == 1) {
+            Toast.makeText(this, "RadioButton_1", Toast.LENGTH_SHORT).show();
+        } else if (i == 2) {
+            Toast.makeText(this, "RadioButton_2", Toast.LENGTH_SHORT).show();
+        }
+    }
+
 }

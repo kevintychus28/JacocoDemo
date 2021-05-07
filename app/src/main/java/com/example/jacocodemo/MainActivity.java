@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void toast(View view) {
-        Toast.makeText(this, "创建了dev分支", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "新的toast", Toast.LENGTH_SHORT).show();
     }
 
     public void intent(View view){
